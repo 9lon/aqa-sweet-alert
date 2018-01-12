@@ -1,36 +1,19 @@
-<link rel="import" href="../polymer/polymer-element.html">
+<script src="./bower_components/sweetalert/docs/assets/sweetalert/sweetalert.min.js"></script>
+<script>
+  window.Nylon = window.Nylon || {}
+  window.Nylon.swal = (obj) => {
+    return swal(obj)
+  }
 
-<dom-module id="aqa-sweet-alert">
-  <template>
-    <style>
-      :host {
-        display: block;
-      }
-    </style>
-    <h2>Hello [[prop1]]!</h2>
-  </template>
-
-  <script>
-    /**
-     * `aqa-sweet-alert`
-     * 
-     *
-     * @customElement
-     * @polymer
-     * @demo demo/index.html
-     */
-    class AqaSweetAlert extends Polymer.Element {
-      static get is() { return 'aqa-sweet-alert'; }
-      static get properties() {
-        return {
-          prop1: {
-            type: String,
-            value: 'aqa-sweet-alert'
-          }
-        };
-      }
+  Nylon.swal(
+    {
+      nylon: 'confirm',
+      title: "Good job!",
+      text: "You clicked the button!",
+      icon: "success",
+      button: "Aww yiss!",
     }
+  )
 
-    window.customElements.define(AqaSweetAlert.is, AqaSweetAlert);
-  </script>
-</dom-module>
+
+</script>
