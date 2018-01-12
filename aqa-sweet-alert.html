@@ -1,0 +1,36 @@
+<link rel="import" href="../polymer/polymer-element.html">
+
+<dom-module id="aqa-sweet-alert">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+    </style>
+    <h2>Hello [[prop1]]!</h2>
+  </template>
+
+  <script>
+    /**
+     * `aqa-sweet-alert`
+     * 
+     *
+     * @customElement
+     * @polymer
+     * @demo demo/index.html
+     */
+    class AqaSweetAlert extends Polymer.Element {
+      static get is() { return 'aqa-sweet-alert'; }
+      static get properties() {
+        return {
+          prop1: {
+            type: String,
+            value: 'aqa-sweet-alert'
+          }
+        };
+      }
+    }
+
+    window.customElements.define(AqaSweetAlert.is, AqaSweetAlert);
+  </script>
+</dom-module>
