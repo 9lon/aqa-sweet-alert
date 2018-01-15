@@ -3,7 +3,8 @@
   "main": "aqa-sweet-alert.html",
   "dependencies": {
     "polymer": "Polymer/polymer#^2",
-    "sweetalert": "t4t5/sweetalert#^2.1.0"
+    "sweetalert": "t4t5/sweetalert#^2.1.0",
+    "aqa-font": "9lon/aqa-font#0 - 1"
   },
   "devDependencies": {
     "iron-demo-helpers": "PolymerElements/iron-demo-helpers#^2.0.0",

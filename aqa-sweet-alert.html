@@ -1,11 +1,12 @@
-<script src="./bower_components/sweetalert/docs/assets/sweetalert/sweetalert.min.js"></script>
+<script src="../sweetalert/docs/assets/sweetalert/sweetalert.min.js"></script>
+<link rel="import" href="./sweet-alert-style.html">
 <script>
   window.Nylon = window.Nylon || {}
   window.Nylon.swal = (obj) => {
     if (obj.nylon == 'success') {
       return swal({
         nylon: 'success',
-        title: obj.title || "Save Complete",
+        title: obj.title || "บันทึกสำเร็จ",
         text: obj.text || "You clicked the button!",
         icon: "success",
         buttons: false,
@@ -15,7 +16,7 @@
     else if (obj.nylon == 'error') {
       return swal({
         nylon: 'error',
-        title: obj.title || "Oops !",
+        title: obj.title || "ผิดพลาด",
         text: obj.text || "Something went wrong.",
         icon: "error",
       })
