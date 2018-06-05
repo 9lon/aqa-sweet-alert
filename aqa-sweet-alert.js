@@ -1,0 +1,48 @@
+import './sweet-alert-style.js';
+// import 'sweetalert/dist/sweetalert.min.js';
+// import 'sweetalert';
+// import swal from 'sweetalert';
+
+window.Nylon = window.Nylon || {}
+window.Nylon.swal = (obj) => {
+  if (obj.nylon == 'success') {
+    return swal({
+      nylon: 'success',
+      title: obj.title || "บันทึกสำเร็จ",
+      text: obj.text || "You clicked the button!",
+      icon: "success",
+      buttons: false,
+      timer: 3000
+    })
+  }
+  else if (obj.nylon == 'error') {
+    return swal({
+      nylon: 'error',
+      title: obj.title || "ผิดพลาด",
+      text: obj.text || "Something went wrong.",
+      icon: "error",
+    })
+  }
+  else if (obj.nylon == 'confirm') {
+    return swal({
+      title: obj.title || "Are you sure?",
+      text: obj.text || "Once deleted, you will not be able to recover this imaginary file!",
+      icon: "warning",
+      buttons: true,
+      dangerMode: true,
+    })
+  }
+  else {
+    return swal(obj)
+  }
+}
+
+// Nylon.swal(
+//   {
+//     nylon: 'confirm',
+//     title: "Good job!",
+//     text: "You clicked the button!",
+//     icon: "success",
+//     button: "Aww yiss!",
+//   }
+// )
