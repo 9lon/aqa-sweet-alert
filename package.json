@@ -1,5 +1,5 @@
 {
-  "name": "@aqa/aqa-sweet-alert",
+  "name": "@nylon/aqa-sweet-alert",
   "version": "1.0.0",
   "resolutions": {
     "inherits": "2.0.3",

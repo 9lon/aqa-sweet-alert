@@ -1,4 +1,4 @@
-import '@aqa/aqa-font/aqa-font.js';
+import '@nylon/aqa-font/aqa-font.js';
 const $_documentContainer = document.createElement('template');
 $_documentContainer.setAttribute('style', 'display: none;');
 
